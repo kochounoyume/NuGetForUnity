@@ -151,7 +151,7 @@ namespace NugetForUnity.Configuration
                     packageElement.Add(new XAttribute(AutoReferencedAttributeName, package.AutoReferenced));
                 }
 
-                if (!string.IsNullOrEmpty(package.DefineConstraints))
+                if (!string.IsNullOrWhiteSpace(package.DefineConstraints))
                 {
                     packageElement.Add(new XAttribute(DefineConstraintsAttributeName, package.DefineConstraints));
                 }
